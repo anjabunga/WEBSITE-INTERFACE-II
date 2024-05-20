@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>UTS - Sistem Peminatan Fakultas Ilmu Komputer UPN Veteran Jakarta</title>
+  <link rel="stylesheet" href="homepageStyle.css">
+</head>
+
+<body>
+  <header>
+    <h5 style="text-align: center;"><a href="https://www.upnvj.ac.id/fakultas/ilmu-komputer/">Ini adalah Ujian Tengah Semester Pemrograman Web. Klik ini untuk ke laman Fakultas Ilmu Komputer UPN Veteran Jakarta →</a></h5>
+  </header>
+  <main>
+    <div class="welcome">
+      <h2 class="logo">
+        <img src="logo.png" width="25px" height="25px"/>
+        Sistem Peminatan Fakultas Ilmu Komputer Universitas Pembangunan Nasional Veteran Jakarta
+      </h2>
+
+      <div class="image-container">
+        <image src="https://images.squarespace-cdn.com/content/v1/5e94f336e17d55230cd5d8f9/1587419779172-E6TLE4OKIT13RDYKGTH1/MIT.jpg" alt="Image description">
+      </div>
+      
+      <div class="text-container">
+        <h1><span style="color: rgb(45, 45, 99);">Selamat Datang pada Sistem Peminjaman Lab</span> <span style="color: orange;">Fakultas Ilmu Komputer</span>Universitas Pembangunan Nasional Veteran Jakarta</h1>
+        <p>Sistem ini untuk sebagai tolok ukur pemahaman diri saya terhadap materi pemrograman web Informatika</p>
+      </div>
+
+      <div class="buttons">
+        <a href="isi_peminjaman.html" class="btn">Mulai Melakukan Peminjaman ></a>
+        <a href="#" class="btn btn-daftar" onclick="showModal()">Daftar Diri</a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 - Fakultas Ilmu Komputer UPN Veteran Jakarta</p>
+  </footer>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>DATA DIRI MAHASISWA</h2>
+      <b><hr size = "10px"></b>
+      <p>Nama: <span id="nama">Anja Bunga Aditya</span></p>
+      <p>NIM: <span id="nim">2210511161</span></p>
+      <p>Program Studi: <span id="prodi">S-1 Informatika</span></p>
+    </div>
+  </div>
+
+  <script>
+    function showModal() {
+      var modal = document.getElementById("myModal");
+      var namaSpan = document.getElementById("nama");
+      var nimSpan = document.getElementById("nim");
+      var prodiSpan = document.getElementById("prodi");
+
+      // Atur nilai nama dan nim yang diinginkan
+      namaSpan.textContent = "Anja Bunga Aditya";
+      nimSpan.textContent = "2210511161";
+      prodiSpan.textContent = "S-1 Informatika"
+
+      modal.style.display = "block";
+    }
+
+    function closeModal() {
+      var modal = document.getElementById("myModal");
+      modal.style.display = "none";
+    }
+  </script>
+</body>
+</html>
+
+ 

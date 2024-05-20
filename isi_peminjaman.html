@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SubmitDataPeminjaman</title>
+    <link rel="stylesheet" href="isi_peminjaman.css" />
+  </head>
+  <body>
+    <div class="login">
+      <h2 class="login-header">
+        Form Isi Peminjaman Lab Fakultas Ilmu Komputer UPN Veteran Jakarta
+        <img src="logo.png" width="20px" height="20px" />
+      </h2>
+
+      <div class="login-container">
+        <p>
+          <input type="text" id="nim" placeholder="NIM Anda" />
+        </p>
+        <p>
+          <input type="text" id="nama" placeholder="Nama Anda" />
+        </p>
+        <p>
+          <input type="text" id="semester" placeholder="Semester Anda" />
+        </p>
+        <p>
+          <select id="lab" onchange="updatePeminjaman()">
+            <option value="" disabled selected>Pilih Lantai Lab</option>
+            <option value="Lantai 2">Lab Lantai 2</option>
+            <option value="Lantai 3">Lab Lantai 3</option>
+            <option value="Lantai 4">Lab Lantai 4</option>
+          </select>
+        </p>
+        <fieldset>
+          <legend>Lab yang Tersedia</legend>
+          <div id="peminatan"></div>
+        </fieldset>
+        <p>
+          <input type="button" value="Submit" onclick="kontrak();" />
+        </p>
+        <p>
+        <input type="button" value="Home" onclick="window.location.href = 'homepage.html'" />
+        </p>
+      </div>
+    </div>
+    <script src="isi_peminjaman.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+body {
+  background: white;
+  font-family: "Open Sans", sans-serif;
+}
+.login {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+}
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.login-header {
+  background: #28d;
+  padding: 20px;
+  font-size: 1.1em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-header img {
+  margin-right: 10px;
+}
+.login-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px;
+}
+.login input[type="text"],
+.login select {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+  margin-bottom: 12px;
+}
+.login input[type="checkbox"] {
+  margin-right: 5px;
+}
+.login input[type="button"] {
+  background: #28d;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 16px;
+  width: 100%;
+  font-size: 1em;
+}
+.login input[type="button"]:hover {
+  background: #17c;
+}
+/* Buttons' focus effect */
+.login input[type="button"]:focus {
+  border-color: #05a;
+}
